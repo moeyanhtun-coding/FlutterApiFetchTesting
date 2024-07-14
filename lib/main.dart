@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_api_fetch/screen/api2screen.dart';
-import 'package:flutter_api_fetch/utils/api2cardscreen.dart';
+import 'package:flutter_api_fetch/screen/productList.dart';
+import 'package:flutter_api_fetch/utils/productCard.dart';
 
 void main() {
   runApp(const MyApp());
