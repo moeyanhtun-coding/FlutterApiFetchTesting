@@ -32,7 +32,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
       setState(() {
         products = jsonData.map((data) => Product.fromJson(data)).toList();
       });
-      print(products);
+      print(products[0].id);
       setState(() {
         isLoading = false;
       });
@@ -82,7 +82,10 @@ class _ProductListScreenState extends State<ProductListScreen> {
       itemBuilder: (context, index) {
         // here we card the card widget
         // which is in utils folder
-        return ProductCard(product: products[index]);
+        return ProductCard(
+          product: products[index],
+          productId: products[index].id,
+        );
       },
     );
   }
