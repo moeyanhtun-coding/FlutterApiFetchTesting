@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_api_fetch/screen/loginPage.dart';
 import 'package:flutter_api_fetch/screen/productList.dart';
 import 'package:flutter_api_fetch/screen/userList.dart';
 import 'package:flutter_api_fetch/utils/productCard.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Userlist(),
+      home: LoginPage(),
     );
   }
 }
