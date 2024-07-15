@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_api_fetch/screen/productList.dart';
+import 'package:flutter_api_fetch/screen/userList.dart';
 import 'package:flutter_api_fetch/utils/productCard.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ProductListScreen(),
+      home: Userlist(),
     );
   }
 }
