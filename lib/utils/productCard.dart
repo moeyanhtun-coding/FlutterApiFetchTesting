@@ -2,11 +2,14 @@ import 'dart:convert';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_api_fetch/screen/userList.dart';
+import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_api_fetch/model/productModel.dart';
 
 class ProductCard extends StatelessWidget {
   late Product product;
+
   int? productId;
 
   ProductCard({required this.product, required this.productId});
@@ -17,9 +20,7 @@ class ProductCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: GestureDetector(
-          onTap: () {
-            print(productId);
-          },
+          onTap: () {},
           child: Column(
             // this is the coloumn
             children: [
