@@ -39,6 +39,7 @@ dependencies:
   loading_animation_widget: ^1.2.1
   get: ^4.6.6
   flutter_chat_ui: ^1.6.14
+  modal_progress_hud: ^0.1.3
 
 dev_dependencies:
   flutter_test:
