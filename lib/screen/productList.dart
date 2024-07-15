@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_api_fetch/utils/productCard.dart';
+import 'package:flutter_api_fetch/screen/userList.dart';
+import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import '../model/productModel.dart';
